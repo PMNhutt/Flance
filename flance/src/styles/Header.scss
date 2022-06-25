@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    border-bottom: 2px solid #f3f3f4;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #FFF;
+
+    .Logo{
+        font-size: 32px;
+        text-decoration: none;
+        color: #3e61df;
+        font-weight: bold;
+        font-family: 'Style Script', cursive;
+        margin-right: 30px;
+
+        &:hover{
+            color: #2044c4;
+        }
+    }
+
+    .active{
+        color: #000!important;
+    }
+
+    .nav-item{
+        margin-right: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #83839B;
+
+        &:hover{
+            color: #4c4c58;
+        }
+    }
+}

@@ -1,0 +1,588 @@
+* {
+    padding: 0;
+    margin: 0;
+    // font-family: 'Style Script', cursive;
+    font-family: 'Work Sans', cursive;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.landing-page {
+
+    .title-bar {
+        width: 63px;
+        height: 6px;
+        background-color: #2C71F5;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+    .title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .bg-black-trans {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(25, 25, 25, 0));
+        width: 100%;
+        height: 84px;
+        position: absolute;
+        bottom: 0;
+        transform: rotate(180deg);
+        border-radius: 10px;
+    }
+
+    .hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 0 0 0 5%;
+
+        .left {
+            width: 45%;
+
+            h1 {
+                font-size: 48px;
+            }
+
+            span {
+                color: #3E61DF;
+                font-family: 'Laila', sans-serif;
+                font-weight: bold;
+            }
+
+            .highlight-1 {
+                width: 50px;
+                height: 50px;
+                background-size: cover;
+                background-image: url('../img/Highlight_05.png');
+            }
+
+            .search-item {
+                margin-top: 20px;
+                height: 46px;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                .search-background {
+                    width: 65%;
+                    padding: 0 10px;
+                    display: flex;
+                    align-items: center;
+                    background-color: #F0F0F4;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+
+                ion-icon {
+                    font-size: 27px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    font-weight: 600;
+                    color: #83839B;
+                    cursor: pointer;
+                }
+
+                input {
+                    font-weight: 600;
+                    font-size: 16px;
+                    border: none;
+                    height: 46px;
+                    width: 100%;
+                    background-color: #F0F0F4;
+                }
+
+                button {
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-size: 16px;
+                    background-color: #3E61DF;
+                    color: #fff;
+                    border: none;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    height: 100%;
+                    padding: 15px;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: #334fb5;
+
+                    }
+                }
+
+
+
+            }
+
+            .common-search {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                p {
+                    font-weight: 600;
+                }
+
+                .tags {
+                    display: flex;
+                    align-items: center;
+
+                    .tag {
+                        user-select: none;
+                        cursor: pointer;
+                        font-weight: 600;
+                        margin-right: 10px;
+                        padding: 5px 10px;
+                        border-radius: 20px;
+                        border: 2px solid #83839B;
+                        transition: 0.2s;
+
+                        &:hover {
+                            background-color: #3E61DF;
+                            color: #fff;
+                            border: 2px solid #3E61DF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url('../img/landingpageimg.jpg');
+            width: 50%;
+            height: 89vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            border-top-left-radius: 193px;
+        }
+    }
+
+    .popular-service {
+        padding: 7% 5%;
+
+        .services {
+            height: 382px;
+            position: relative;
+        }
+
+        .mySwiper {
+            margin-top: 20px;
+            padding: 0 35px 35px 35px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -30px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgb(88, 169, 220);
+            border-radius: 10px;
+            cursor: pointer;
+            user-select: none;
+            flex-direction: column;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .item p {
+            font-weight: 600;
+            color: #fff;
+            position: absolute;
+            bottom: 26px;
+            z-index: 10;
+            left: 20px;
+        }
+
+        .item1 {
+            background-image: url('../img/ui-ui-design.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item2 {
+            background-image: url('../img/social-media.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item3 {
+            background-image: url('../img/coder.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item4 {
+            background-image: url('../img/3d-art.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item5 {
+            background-image: url('../img/logo-design.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item6 {
+            background-image: url('../img/translator.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item7 {
+            background-image: url('../img/illu.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item8 {
+            background-image: url('../img/data.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-pagination {
+            bottom: 0;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: #F0F0F4;
+            box-shadow: 0px 5px 10px rgb(0 0 0 / 25%);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .swiper-button-next {
+            background-image: url('../img/Caret right.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+        }
+
+        .swiper-button-prev {
+            background-image: url('../img/Caret left.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+    }
+
+    .what-we-do {
+        padding: 5% 0%;
+
+        .title-container {
+            padding-left: 5%;
+            margin-bottom: 20px;
+        }
+
+        .content {
+
+            .box-content {
+                justify-content: center;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 11%;
+                gap: 20px;
+            }
+
+            .box-content-no-row {
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                display: flex;
+                padding: 0 11%;
+                gap: 20px;
+            }
+
+            .box-content-col {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                position: relative;
+
+            }
+
+            .handraw-arrow {
+                bottom: 68px;
+                right: 0;
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+                background-image: url('../img/Arrow_11.png')
+            }
+
+
+
+            .box1 {
+                width: 100%;
+                height: 440px;
+                position: relative;
+
+                p {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 1.3;
+                }
+
+                button {
+                    padding: 15px 14px;
+                    border: none;
+                    outline: none;
+                    margin-right: 20px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                .btn-hire {
+                    background-color: #7EA8F9;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: #4984fc;
+                    }
+                }
+
+                .btn-job {
+                    background-color: #FA8878;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: #fa5e49;
+                    }
+                }
+            }
+
+            .box3 {
+                width: 100%;
+                height: 440px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background-color: rgba(173, 126, 249, 0.71);
+
+                .hand-shake {
+                    position: relative;
+                    padding-left: 30%;
+                    width: 60%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('../img/image 11.png')
+                }
+
+                .handraw-hightlight3 {
+                    position: absolute;
+                    top: -17px;
+                    right: 0px;
+                    position: absolute;
+                    width: 23px;
+                    height: 23px;
+                    background-size: cover;
+                    background-image: url('../img/Highlight_03.png')
+                }
+
+                .handraw-misc1 {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 20px;
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background-size: cover;
+                    background-image: url('../img/Misc_01.png')
+                }
+
+                .handraw-misc2 {
+                    position: absolute;
+                    top: -20px;
+                    right: -5px;
+                    position: absolute;
+                    width: 46px;
+                    height: 46px;
+                    background-size: cover;
+                    background-image: url('../img/Misc_02.png')
+                }
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.3;
+                    font-weight: 500;
+                }
+
+            }
+
+            .box2 {
+                width: 100%;
+                height: 440px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: rgba(44, 114, 245, 0.61);
+                position: relative;
+
+                .packs {
+                    padding-left: 30%;
+                    width: 50%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('../img/image 10.png')
+                }
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.3;
+                    font-weight: 500;
+                }
+
+                .handraw-underline {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 0;
+                    position: absolute;
+                    width: 233px;
+                    height: 115px;
+                    background-size: cover;
+                    background-image: url('../img/Underline_04.png')
+                }
+
+                .handraw-hightlight3 {
+                    position: absolute;
+                    top: -10px;
+                    right: 30px;
+                    position: absolute;
+                    width: 23px;
+                    height: 23px;
+                    background-size: cover;
+                    background-image: url('../img/Highlight_03.png')
+                }
+
+            }
+
+            .box4 {
+                width: 100%;
+                height: 440px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: rgba(126, 197, 249, 0.78);
+            
+                .freelancers{
+                    position: relative;
+                    padding-left: 30%;
+                    width: 50%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('../img/image 12.png')
+                }
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.3;
+                    font-weight: 500;
+                }
+
+                .handraw-misc1 {
+                    position: absolute;
+                    top: 15px;
+                    right: 12px;
+                    
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background-size: cover;
+                    background-image: url('../img/Misc_01.png')
+                }
+
+                .handraw-misc2 {
+                    position: absolute;
+                    bottom: -35px;
+                    left: 30px;
+                    position: absolute;
+                    width: 46px;
+                    height: 46px;
+                    background-size: cover;
+                    background-image: url('../img/Misc_02.png')
+                }
+
+                .handraw-hightlight3 {
+                    position: absolute;
+                    top: -10px;
+                    right: 30px;
+                    position: absolute;
+                    width: 23px;
+                    height: 23px;
+                    background-size: cover;
+                    background-image: url('../img/Highlight_03.png')
+                }
+            
+            }
+        }
+
+    }
+}
