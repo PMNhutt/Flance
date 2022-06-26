@@ -1,0 +1,55 @@
+.footer {
+    padding: 0 5%;
+    height: 40vh;
+    margin-top: 5%;
+    
+    .content{
+        width: 100%;
+        height: 100%;
+        background-color: #CDD1FF;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+        
+
+        .logo {
+            margin: 40px;
+            width: 25%;
+            .Logo{
+                font-size: 32px;
+                text-decoration: none;
+                color: #3e61df;
+                font-weight: bold;
+                font-family: 'Style Script', cursive;
+                margin-right: 30px;
+        
+                &:hover{
+                    color: #2044c4;
+                }
+            }
+        }
+
+        .item{
+            width: 25%;
+            margin: 40px;
+
+            ul{
+                li {
+                    margin: 30px 0;
+                    list-style-type: none;
+                    font-weight: 500;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: 0.2s;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}
