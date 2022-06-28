@@ -1,39 +1,80 @@
 .header{
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 5%;
     border-bottom: 2px solid #f3f3f4;
     position: fixed;
     z-index: 999;
     width: 100%;
     background-color: #FFF;
 
-    .Logo{
-        font-size: 32px;
-        text-decoration: none;
-        color: #3e61df;
-        font-weight: bold;
-        font-family: 'Style Script', cursive;
-        margin-right: 30px;
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 5%;
+        align-items: center;
 
-        &:hover{
-            color: #2044c4;
+        .Logo{
+            font-size: 32px;
+            text-decoration: none;
+            color: #3e61df;
+            font-weight: bold;
+            font-family: 'Style Script', cursive;
+            margin-right: 50px;
+    
+            &:hover{
+                color: #2044c4;
+            }
+        }
+    
+        .active{
+            color: #000!important;
+        }
+    
+        .nav-item{
+            margin-right: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #83839B;
+    
+            &:hover{
+                color: #4c4c58;
+            }
+        }
+
+        .right-navigation {
+
+            .sign-in-btn {
+                padding: 10px;
+                border: none;
+                margin-right: 15px;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: transparent;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: #dbdbdb;
+                }
+            }
+
+            .sign-up-btn {
+                padding: 10px 20px;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #3E61DF;
+                color: #FFFFFF;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: #032ec8;
+                }
+            }
         }
     }
 
-    .active{
-        color: #000!important;
-    }
-
-    .nav-item{
-        margin-right: 30px;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-        color: #83839B;
-
-        &:hover{
-            color: #4c4c58;
-        }
-    }
+    
 }

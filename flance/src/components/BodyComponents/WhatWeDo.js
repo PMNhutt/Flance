@@ -33,9 +33,9 @@ function WhatWeDo() {
                 <div className="box-content-col">
                   <div className="handraw-hightlight3"></div>
                   <h3>Gói dịch vụ hấp dẫn</h3>
-                  <p>Khi cá nhân/doanh nghiệp mua theo gói dịch vụ 
-                    đăng bài tuyển Freelancer, người mua sẽ được miễn phí trong 3
-                     - 4 bài đăng đầu tiên</p>
+                  <p>Dẹp bỏ nỗi lo phải “chờ job”, nay Freelancer có thể đưa ra các gói
+                     dịch vụ hấp dẫn và khách hàng có thể chủ động vào xem và liên hệ mua
+                      dịch vụ từ bạn</p>
                 </div>
                 <div className="packs"></div>
                 <div className="handraw-underline"></div>

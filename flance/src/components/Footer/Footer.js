@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="content">
         <div className="logo">
-          <a href="#" className="Logo">Flance</a>
+          <a href="/" className="Logo">Flance</a>
         </div>
         <div className="about item">
           <h1>Về chúng tôi</h1>
