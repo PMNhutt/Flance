@@ -6,8 +6,8 @@ function Header() {
     <div className="header">
       <div className="header-container">
         <div className="left-navigation">
-          <a href="/" className="Logo">Flance</a>
-          <a href="/" className="nav-item active">Trang Chủ</a>
+          <a href="#" className="Logo">Flance</a>
+          <a href="#" className="nav-item active">Trang Chủ</a>
           <a href="/" className="nav-item">Tìm Việc</a>
           <a href="/" className="nav-item">Tìm Freelancers</a>
         </div>
