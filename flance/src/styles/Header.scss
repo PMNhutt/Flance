@@ -1,41 +1,44 @@
-.header{
-    border-bottom: 2px solid #f3f3f4;
+.header {
     position: fixed;
     z-index: 999;
     width: 100%;
-    background-color: #FFF;
 
-    .header-container{
+    .header-container {
         display: flex;
         justify-content: space-between;
         padding: 1% 5%;
         align-items: center;
+        background-color: #FFF;
+        border-bottom: 2px solid #f3f3f4;
 
-        .Logo{
+
+        .Logo {
             font-size: 32px;
             text-decoration: none;
             color: #3e61df;
             font-weight: bold;
             font-family: 'Style Script', cursive;
             margin-right: 50px;
-    
-            &:hover{
+
+            &:hover {
                 color: #2044c4;
             }
         }
-    
-        .active{
-            color: #000!important;
+
+        .active {
+            color: #000 !important;
         }
-    
-        .nav-item{
+
+
+
+        .nav-item {
             margin-right: 30px;
             font-size: 20px;
             font-weight: 600;
             text-decoration: none;
             color: #83839B;
-    
-            &:hover{
+
+            &:hover {
                 color: #4c4c58;
             }
         }
@@ -53,7 +56,7 @@
                 background-color: transparent;
                 transition: 0.2s;
 
-                &:hover{
+                &:hover {
                     background-color: #dbdbdb;
                 }
             }
@@ -69,12 +72,71 @@
                 color: #FFFFFF;
                 transition: 0.2s;
 
-                &:hover{
+                &:hover {
                     background-color: #032ec8;
                 }
             }
         }
     }
 
-    
+    .subnav {
+        border-bottom: 2px solid #f3f3f4;
+        background-color: #FFF;
+
+
+        .subnav-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0% 5%;
+            align-items: center;
+
+            .subnav-root-items {
+                display: flex;
+                list-style-type: none;
+
+                .subnav-root-item {
+                    margin-right: 30px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 0.8% 0;
+                    text-decoration: none;
+                    cursor: pointer;
+                    user-select: none;
+                    color: #83839B;
+                    transition: 0.2s;
+
+                    a {
+                        text-decoration: none;
+                        color: #83839B;
+                        transition: 0.2s;
+                        padding: 10px 0;
+                        position: relative;
+
+                        &:after {
+                            background: transparent;
+                            bottom: 0;
+                            content: "";
+                            height: 3px;
+                            left: 0;
+                            position: absolute;
+                            width: 100%;
+                            z-index: 99;
+                            transition: 0.1s;
+                        }
+
+                        &:hover {
+                            &::after {
+                                background: #3E61DF;
+
+                            }
+
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
 }
