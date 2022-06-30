@@ -83,7 +83,6 @@
         border-bottom: 2px solid #f3f3f4;
         background-color: #FFF;
 
-
         .subnav-container {
             display: flex;
             justify-content: space-between;
@@ -100,12 +99,12 @@
                     font-weight: 600;
                     padding: 0.8% 0;
                     text-decoration: none;
-                    cursor: pointer;
                     user-select: none;
                     color: #83839B;
                     transition: 0.2s;
+                    position: relative;
 
-                    a {
+                    .root-nav {
                         text-decoration: none;
                         color: #83839B;
                         transition: 0.2s;
@@ -134,7 +133,58 @@
                         }
                     }
 
+                    &:nth-child(n+6) {
+                        .item-menus {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
 
+                    .item-menus {
+                        display: flex;
+                        gap: 100px;
+                        width: max-content;
+                        top: 45px;
+                        list-style-type: none;
+                        position: absolute;
+                        background-color: rgb(252, 252, 252);
+                        box-shadow: 0px 5px 10px rgb(0 0 0 / 25%);
+                        padding: 20px 30px;
+
+                        .menu {
+                            display: flex;
+                            gap: 10px;
+                            flex-direction: column;
+                            list-style-type: none;
+
+                            a {
+                                text-decoration: none;
+                                color: #83839B;
+                                transition: 0.2s;
+
+                                &:hover {
+                                    color: rgb(42, 42, 42);
+
+                                }
+                            }
+
+                            .submenu-title {
+                                font-size: 20px;
+                                color: rgb(42, 42, 42);
+                                padding: 8px 0;
+                            }
+
+                            .submenu-item {
+                                padding: 8px 6px;
+                                transition: 0.2s;
+                                border-radius: 5px;
+
+                                &:hover {
+                                    background-color: #dbdbdb;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
